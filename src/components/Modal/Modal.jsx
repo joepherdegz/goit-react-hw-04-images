@@ -1,3 +1,4 @@
+import React from 'react';
 import Modal from 'react-modal';
 import css from './Modal.module.css';
 
@@ -9,11 +10,10 @@ const ImageModal = ({ modalClose, modalOpen, image }) => {
             onRequestClose={modalClose}
             isOpen={modalOpen}
             contentLabel='Image Modal'
-            className={css.modal}
-            overlayClassName={css.overlay}
-            shouldCloseOnOverlayClick={true}
+            className={css.overlay}
+            
         >
-            <div className={css.modalContent}>
+            <div className={css.modal}>
                 <img src={image} alt="" />
             </div>
         </Modal>

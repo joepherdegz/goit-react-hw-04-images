@@ -18,7 +18,7 @@ export class ImageGalleryItem extends Component {
     }
     render() {
         const { selectedImage } = this.state;
-        const { webformatURL, tags } = this.props;
+    const { webformatURL, tags } = this.props;
 
     return (
       <li className={css.imageGalleryItem} onClick={this.handleOpenModal}>

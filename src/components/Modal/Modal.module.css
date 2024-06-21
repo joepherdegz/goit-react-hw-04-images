@@ -7,16 +7,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1200;
 }
 
 .modal {
-    /* margin-top: 70px; */
+    margin-top: 70px;
     max-width: calc(100vw - 48px);
     max-height: calc(100vh - 24px);
-}
-
-.modalContent {
-    margin-top: 50px;
 }
