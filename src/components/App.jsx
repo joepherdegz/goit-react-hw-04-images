@@ -2,6 +2,7 @@ import { Component } from 'react';
 import { Button } from './Button/Button';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Searchbar } from './Searchbar/Searchbar';
+import { Loader } from './Loader/Loader';
 import css from './App.module.css';
 import { getAPI } from '../pixabay-api';
 import toast, { Toaster } from 'react-hot-toast';
@@ -98,7 +99,7 @@ export class App extends Component {
 
         {/* Render Button Component when there is atleast a page or more and it's not the end of page */}
         {images.length >= 1 && !isEnd && <Button onClick={this.handleClick} />}
-        {isLoading && <h2>Loading......</h2>}
+        {isLoading && <Loader />}
         {isError &&
           toast.error('Oops, something went wrong! Reload this page!')}
 

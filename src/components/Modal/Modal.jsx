@@ -9,9 +9,11 @@ const ImageModal = ({ modalClose, modalOpen, image }) => {
             onRequestClose={modalClose}
             isOpen={modalOpen}
             contentLabel='Image Modal'
-            className={css.overlay}
+            className={css.modal}
+            overlayClassName={css.overlay}
+            shouldCloseOnOverlayClick={true}
         >
-            <div className={css.modal}>
+            <div className={css.modalContent}>
                 <img src={image} alt="" />
             </div>
         </Modal>
